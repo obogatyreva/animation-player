@@ -1,0 +1,106 @@
+.column-wrapper {
+  display: flex;
+  position: absolute;
+  text-align: center;
+  font-size: 0;
+  left: 100px;
+  top: 69px;
+  right: 0;
+  bottom: 0;
+}
+
+.left-column {
+  height: 100%;
+  padding-right: 7px;
+}
+
+.main-column {
+  background: #E5E7E9;
+  position: relative;
+  overflow: hidden;
+}
+
+#canvas-container {
+  border: 1px solid black;
+}
+
+canvas {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABlBMVEVMTExVVVUnhsEkAAAAHUlEQVR4AWOAAUYoQOePEAUj3v9oYDQ9gMBoegAAJFwCAbLaTIMAAAAASUVORK5CYII=') repeat;
+}
+
+.frame-number {
+  border: 2px solid #ccc;
+  position: relative;
+}
+
+.frame-number canvas {
+  border: 2px solid #ccc;
+}
+
+.frame-number canvas.active,
+.frame-number.active {
+	border-color: yellow;
+}
+
+.frame-number button {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+}
+
+.frame-number button.delete {
+  top: 2px;
+  right: 2px;
+  background: url(../assets/icons.png) no-repeat -274px -106px #555;
+  border: none;
+}
+
+.frame-number button.delete:hover,
+.frame-number button.duplicate:hover {
+  cursor: pointer;
+}
+
+.frame-number button.duplicate {
+  bottom: 2px;
+  right: 2px;
+  background: url(../assets/icons.png) no-repeat -274px -76px #555;
+  border: none;
+}
+
+.frame-number .order-num {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #ccc;
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.frame-number.active .order-num {
+  background: yellow;
+}
+
+.right-column {
+  position: relative;
+  box-sizing: border-box;
+  height: 100%;
+  padding-left: 10px;
+  padding-bottom: 20px;
+}
+
+#preview-container {
+  border: 1px solid black;
+}
+
+.fps-controller {
+  display: block;
+}
+
+.fps-value {
+  width: 10px;
+  height: 10px;
+  text-align: center;
+  font-size: 14px;
+}

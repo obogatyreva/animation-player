@@ -1,0 +1,16 @@
+.heading-box {
+  width: 100%;
+  height: 48px;
+	border: 1px solid gray;
+	background: url("../assets/Shape.png") no-repeat 13px 17px;
+}
+
+.heading-box h1 {
+	font-size: 20px;
+	margin-left: 73px;
+}
+
+canvas.active,
+.frame-number.active {
+	border-color: yellow;
+}
